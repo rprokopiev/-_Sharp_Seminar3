@@ -14,7 +14,7 @@ int EntryLenght(int Entry)
     }
     return i;
 }
-// void ArrayPrint(int[] ar)
+void ArrayPrint(int[] ar)
 {
     int i = 0;
     int l = ar.Length;
