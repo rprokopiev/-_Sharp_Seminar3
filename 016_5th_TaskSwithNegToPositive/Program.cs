@@ -5,23 +5,23 @@
     {
         if (array[i] < 0)
         {
-            array[i] = array [i] + (2 * array [i]);
+            array[i] = array [i] * -1;
             i++;
         }
         else
         {
-            array[i] = array[i] - (2 * array[i]);
+            array[i] = array[i] * -1;
             i++;
         }
     }
 }
 
-int [] test = {1,2,3,4,5};
+int [] test = {0,-2,3,-4,5};
 SwitchArrayPositNegative(test);
-// int i = 0;
-// while(i < test.Length)
-// {
-//     Console.Write(test[i] + " / ");
-//     i++;
-// }
+int i = 0;
+while(i < test.Length)
+{
+    Console.Write(test[i] + " / ");
+    i++;
+}
 
