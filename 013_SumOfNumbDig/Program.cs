@@ -15,7 +15,7 @@
     int Lght = IntegerLenght(number);
     int sum = 0;
     int m = 0;
-    for (int i=0; i<Lght; i++)
+    for (int i=0; i<=Lght; i++)
     {
         m = number % 10;
         sum = sum + m;
