@@ -11,7 +11,7 @@
     }
     else
     {
-        int i = 0;
+        int i = 1;
         while (i < B)
         {
             C = C*A;
