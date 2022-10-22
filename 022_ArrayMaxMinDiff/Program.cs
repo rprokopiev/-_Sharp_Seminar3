@@ -37,12 +37,13 @@ double min = array[0];
 for (int i = 0; i < array.Length; i++)
 {
     if (array[i] > max) max = array[i];
-}
-
-for (int i = 0; i < array.Length; i++)
-{
     if (array[i] < min) min = array[i];
 }
+
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (array[i] < min) min = array[i];
+// }
 
 Console.WriteLine(min +" " + max);
 Console.WriteLine(max - min);

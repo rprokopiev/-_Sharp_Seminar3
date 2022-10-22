@@ -1,22 +1,26 @@
 ﻿Console.WriteLine("enter");
-int number = int.Parse(Console.ReadLine());
+int x = int.Parse(Console.ReadLine());
 
+Console.WriteLine("должно быть " + Convert.ToString(x,2));
+Console.WriteLine("рекурсия " + Conv(x)); 
+
+int N = x;
 int k;
-string result = "";
+string res = "";
 
-while (number > 0);
+do
 {
-    k = number % 2;
-    number = number / 2;
-    result = k + result;
-}
+    k = N % 2;
+    N = N / 2;
+    res = k + res;
+}while (N > 0);
 
-// Console.WriteLine(result);
-// Console.WriteLine(Convert.ToString(number,2));
-Console.WriteLine(Conv(number));
+Console.WriteLine("while " + res);
 
-string Conv (int number)
+
+string Conv (int N)
 {
-    if (number == 0) return "";
-    return k + Conv (number / 2);
+    if (N == 0) return "0";
+    int Z =N%2;
+    return Z + Conv (N / 2);
 }
