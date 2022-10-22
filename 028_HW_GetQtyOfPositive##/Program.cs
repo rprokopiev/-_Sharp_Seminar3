@@ -61,7 +61,7 @@ if (Lght > 0)
     Console.Write("Введено ");
     PrintArray(Array);
     int result = GetQtyOfPositiveNumbs(Array);
-    Console.WriteLine("Кол-во числел больше 0 = " + result);
+    Console.WriteLine("Кол-во чисел больше 0 = " + result);
 }
 else
 {
