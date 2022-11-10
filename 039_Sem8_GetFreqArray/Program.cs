@@ -1,4 +1,4 @@
-﻿int[] array = { 1, 3, 5, 2, 3, 2, 6 };
+﻿int[] array = { 1, 3, 5, 2, 1, 1, 1 };
 PrintArr(array);
 int[] sortArray = GetSortArray(array);
 PrintArr(sortArray);
@@ -8,7 +8,7 @@ int[] GetSortArray(int[] array)
     for (int j = 0; j < array.Length; j++)
     {
         int min = array[j];
-        int minInd = 0;
+        int minInd = j;
         for (int i = j; i < array.Length; i++)
         {
             if (array[i] < min)
@@ -17,7 +17,7 @@ int[] GetSortArray(int[] array)
                 minInd = i;
             }
         }
-        array[minInd] = array[0];
+        array[minInd] = array[j];
         array[j] = min;
     }
     return array;
