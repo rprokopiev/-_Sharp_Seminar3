@@ -28,6 +28,7 @@ void PrintArray(int[,] array)
     }
     Console.WriteLine();
 }
+
 void GetLowSumRow(int[,] array)
 {
     int[] arr = new int[array.GetLength(0)];
