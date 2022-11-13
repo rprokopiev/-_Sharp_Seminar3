@@ -52,7 +52,7 @@ int maxA = GetNumber("Max number of Matrix A");
 int[,] ArrayA = Fill2DArray(rowsA, columnsA, minA, maxA);
 
 int rowsB = GetNumber("Rows Quantiy of Matrix B");
-int columnsB = GetNumber("olumns Quantiy of Matrix B");
+int columnsB = GetNumber("Columns Quantiy of Matrix B");
 int minB = GetNumber("Min number of Matrix B");
 int maxB = GetNumber("Max number of Matrix B");
 int[,] ArrayB = Fill2DArray(rowsB, columnsB, minB, maxB);
