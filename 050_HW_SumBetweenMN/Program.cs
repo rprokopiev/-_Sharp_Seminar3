@@ -17,8 +17,11 @@ int GetSumBetween2Numbers(int m, int n, int sum = 0)
     }
 }
 
-int M = 4;
-int N = 8;
-
-Console.WriteLine(GetSumBetween2Numbers(M, N));
+int M = 1;
+int N = 15;
+if (M < N)
+{
+    Console.WriteLine(GetSumBetween2Numbers(M, N));
+}
+else Console.WriteLine("Error");
 
