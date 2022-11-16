@@ -1,7 +1,5 @@
 ﻿// Напишите программу, которая выведет все натуральные числа в промежутке от N до 1.
 
-int N = 9;
-
 string GetNumber(int number)
 {
     Console.Write(number + ", ");
@@ -13,4 +11,5 @@ string GetNumber(int number)
     else return GetNumber(number-1);
 }
 
+int N = 9;
 GetNumber(N);
